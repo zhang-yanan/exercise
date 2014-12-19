@@ -26,7 +26,8 @@
 #ifdef my_exercise_12_8to9
 
 //definition of class fucntion, shall be out of other functions
-inline char Screen::get(std::string::size_type h, std::string::size_type w) const
+//inline char Screen::get(std::string::size_type h, std::string::size_type w) const
+inline char Screen::get(Screen::index h, Screen::index w) const
 {
     index content_now = h * width + w;
     return(content[content_now]);

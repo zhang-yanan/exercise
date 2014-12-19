@@ -28,6 +28,7 @@ public:
     Screen& set(char c){ content[cursor]=c; std::cout<<"this is set function\n"; return *this;}
     Screen& set(index h, index w, char c){content[h*width+w]=c; std::cout<<"this is set function:\n";return *this;}
     Screen& move(index h, index w){ cursor = h * width + w; std::cout<<"this is move function: cursor="<<cursor<<"\n"; return *this;}
+    
 private:
     
     std::string content;
